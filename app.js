@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-const ip = process.env.HOST || 'localhost';
+const ip = process.env.IP || 'localhost';
 
 app.listen(port, () => {
   console.log('\x1b[36m%s\x1b[0m', ` 

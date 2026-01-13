@@ -1,4 +1,5 @@
-const API_URL = `http://{ip}/api/v1/metrics`;
+const ip = process.env.IP || 'localhost';
+const API_URL = `http://${ip}/api/v1/metrics`;
 
 async function loadMetrics() {
   try {
