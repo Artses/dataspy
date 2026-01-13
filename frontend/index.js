@@ -1,7 +1,9 @@
-const ip = process.env.IP || 'localhost';
-const API_URL = `http://${ip}/api/v1/metrics`;
+// switch this manullaly to point to your backend server if needed
+const API_URL = `http://localhost:3000/api/v1/metrics`;
 
 async function loadMetrics() {
+  console.log("Fetching metrics from:", API_URL);
+
   try {
     const res = await fetch(API_URL);
     if (!res.ok) throw new Error("Erro HTTP");
