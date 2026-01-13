@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>4MTI - Database Monitor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="https://4mti.com.br/img/logo_preta.png" alt="4MTI Logo" class="logo">
+    <span id="status" class="status ok">OK</span>
+  </header>
+
+  <main>
+    <section class="cards">
+      <div class="card">
+        <h3>Conexões Ativas</h3>
+        <p id="connections">-</p>
+      </div>
+
+      <div class="card">
+        <h3>Queries Lentas</h3>
+        <p id="slowQueries">-</p>
+      </div>
+
+      <div class="card">
+        <h3>Locks Ativos</h3>
+        <p id="locks">-</p>
+      </div>
+    </section>
+
+    <section class="table-section">
+      <h2>Top Queries Lentas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Query</th>
+            <th>Duração (seg)</th>
+            <th>PID</th>
+            <th>Usuario</th>
+          </tr>
+        </thead>
+        <tbody id="queriesTable"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

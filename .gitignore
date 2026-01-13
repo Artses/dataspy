@@ -1,0 +1,32 @@
+# Dependencies
+node_modules
+/jspm_packages/
+
+# Production build files
+/dist
+/build
+/out
+.next      # Next.js build output
+.nuxt      # Nuxt.js build output
+.svelte-kit/ # SvelteKit build output
+
+# Temporary files, caches, and logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+# Diagnostic reports (nodejs.org)
+.report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Environment variables
+.env
+.env.*
+!.env.example # Allow the example file to be committed
+
+# Editors/OS-specific files
+.DS_Store # macOS settings file
+Thumbs.db # Windows thumbnail cache
+.vscode/  # VS Code configuration directory
+
+# Testing coverage
+coverage
