@@ -14,7 +14,7 @@ A Node.js-based application for monitoring databases, built with Express.js and 
    ```
    npm install
    ```
-
+ 
 3. Set up environment variables:
    - Copy `env_exemple` to `.env`
    - Configure your database connection and other settings in `.env`
